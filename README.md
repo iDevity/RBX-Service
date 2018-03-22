@@ -1,10 +1,7 @@
 Welcome to our site, please don't worry, this website is currently in works.
 
 
-<form action="action_page.php">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
@@ -18,10 +15,4 @@ Welcome to our site, please don't worry, this website is currently in works.
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
 
