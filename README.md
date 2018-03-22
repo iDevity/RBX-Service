@@ -1,5 +1,9 @@
-# RBXService
-This Site is in early development! Please wait for further notice,
+<!DOCTYPE html>
+<html>
+<body>
 
-<button type="button">Discord</button>
+<h2>The Button Element</h2>
+<button type="button" onclick="alert('Hello world!')">Click Me!</button>
  
+</body>
+</html>
