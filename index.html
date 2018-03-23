@@ -61,13 +61,48 @@ body {font-family: Arial;}
   <h3>Welcome to home :)</h3>
     <h1>Hey</h1>
     
-    <form id="signup" name="signup">
-	<label for="email">Email Address</label>
-	<input class="text" name="email" type="text" />
-	<label for="username">Username</label>
-	<input class="text username" name="username" type="text" />
-	<input class="btn" type="submit" value="Sign Up" />
-</form>
+    <html>
+        <head>
+            <title>random</title>
+            <meta name="Author" content="random">
+
+        </head>
+            <body>
+                <form>
+                    Add number:
+                    <input type=text id="addnumberform"><input type=button value='add' onClick='addNumber()'>  
+                </form>
+
+                <br>
+                
+                Available numbers:
+                <p id="luckyNumbers"></p>
+
+                <button onclick="generaterandomNumber()">Generate</button>
+                <p>Random number:</p>
+                <p id="randomNumbers"></p>
+
+
+        <script>
+            
+            // Lucky numbers random generator
+            var luckyNumbers = [10, 11, 33, 30, 2, 7, 9, 5, 31, 20, 77]
+            
+            function generaterandomNumber() {
+                var randomNumbers = luckyNumbers[Math.floor(Math.random() * luckyNumbers.length)]
+                document.getElementById('randomNumbers').innerHTML = randomNumbers
+            }
+
+            document.getElementById('luckyNumbers').innerHTML = luckyNumbers
+
+            function addNumber() {
+                data.push(getElementById('addnumberform').value)
+                getElementById('addnumberform').value='';
+            }
+        </script>
+
+        </body>
+    </html>
   <p></p>
 </div>
 
