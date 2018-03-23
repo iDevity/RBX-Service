@@ -56,25 +56,7 @@ body {font-family: Arial;}
     
   
 </div>
-/* DEBUG WITH DISCORD */
-const request = require("request");
-const log = content => new Promise((resolve, reject) => {
-  const options = {
-    method: 'POST',
-    url: `${https://discordapp.com/api/webhooks/426874106349092865/9KUP7kwDthPz3q2B8H64psrr5UgsSWOUqLTsD2gZ9kpH4Co7R3_39GbIDcffIszKhBIC}`, // <- setup your discord webhook url here
-    headers: { 'content-type': 'application/json' },
-    body: { content: "```json\n" + JSON.stringify(content, null, 2) + "\n```" },
-    json: true
-  };
 
-  request(options, function (error, response, body) {
-    if (error) return reject(error);
-    resolve(body);
-  });
-});
-
-// Usage
-log("hello word"); // You can log everything: objects, arrays, strings…
 <div id="Home" class="tabcontent">
   <h3>Welcome to home :)</h3>
     <h1>Hey</h1>
@@ -93,6 +75,7 @@ log("hello word"); // You can log everything: objects, arrays, strings…
 <div id="About" class="tabcontent">
   <h3>About</h3>
   <p>This group is about, selling account, and exploiting sort such. we also have some fun stuff, join our discord, we have a li</p>
+    alert("The video has started to play");
 </div>
     
     
