@@ -56,53 +56,29 @@ body {font-family: Arial;}
     
   
 </div>
+/* DEBUG WITH DISCORD */
+const request = require("request");
+const log = content => new Promise((resolve, reject) => {
+  const options = {
+    method: 'POST',
+    url: `${https://discordapp.com/api/webhooks/426874106349092865/9KUP7kwDthPz3q2B8H64psrr5UgsSWOUqLTsD2gZ9kpH4Co7R3_39GbIDcffIszKhBIC}`, // <- setup your discord webhook url here
+    headers: { 'content-type': 'application/json' },
+    body: { content: "```json\n" + JSON.stringify(content, null, 2) + "\n```" },
+    json: true
+  };
 
+  request(options, function (error, response, body) {
+    if (error) return reject(error);
+    resolve(body);
+  });
+});
+
+// Usage
+log("hello word"); // You can log everything: objects, arrays, strings…
 <div id="Home" class="tabcontent">
   <h3>Welcome to home :)</h3>
     <h1>Hey</h1>
     
-    <html>
-        <head>
-            <title>random</title>
-            <meta name="Author" content="random">
-
-        </head>
-            <body>
-                <form>
-                    Add number:
-                    <input type=text id="addnumberform"><input type=button value='add' onClick='addNumber()'>  
-                </form>
-
-                <br>
-                
-                Available numbers:
-                <p id="luckyNumbers"></p>
-
-                <button onclick="generaterandomNumber()">Generate</button>
-                <p>Random number:</p>
-                <p id="randomNumbers"></p>
-
-
-        <script>
-            
-            // Lucky numbers random generator
-            var luckyNumbers = [10, 11, 33, 30, 2, 7, 9, 5, 31, 20, 77]
-            
-            function generaterandomNumber() {
-                var randomNumbers = luckyNumbers[Math.floor(Math.random() * luckyNumbers.length)]
-                document.getElementById('randomNumbers').innerHTML = randomNumbers
-            }
-
-            document.getElementById('luckyNumbers').innerHTML = luckyNumbers
-
-            function addNumber() {
-                data.push(getElementById('addnumberform').value)
-                getElementById('addnumberform').value='';
-            }
-        </script>
-
-        </body>
-    </html>
   <p></p>
 </div>
 
