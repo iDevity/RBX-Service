@@ -2,167 +2,89 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: Arial;}
-
-/* Style the tab */
-.tab {
+.navbar {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
+.navbar a {
     float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
     border: none;
     outline: none;
-    cursor: pointer;
+    color: white;
     padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 </style>
 </head>
 <body>
 
-<p>                   This server is in maintenance, please wait until the site is ready..:</p>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-  <button class="tablinks" onclick="openCity(event, 'Memberships')">Memberships</button>
-  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
-    <button class="tablinks" onclick="openCity(event, 'Credits')">Credits</button>
-     <button class="tablinks" onclick="openCity(event, 'Downloads')">Downloads</button>
-    
-    
-    
-  
-</div>
-
-<div id="Home" class="tabcontent">
-  <h3>Welcome to home :)</h3>
-    <h1>Hey</h1>
-    <html>
-        <html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title>RBXService</title>
-    <script type="text/javascript" charset="utf-8">
-        function log (e) {
-            document.getElementById('output').innerHTML += "<p>" + e.toString() + "</p>";
-        }
-    </script>
-  </head>
-  <body>
-     <input type="text" id="receiver" onkeydown="log(this)">
-     <div id="output"></div>
-  </body>
-</html>
-<body>
-
-
-<button onclick="myFunction()">free robuxz</button>
-
-<script>
-function myFunction() {
-    <a href="/images/myw3schoolsimage.jpg" download>
-    alert("lol get pranked noob");
-}
-</script>
-
-</body>
-</html>
-
-    
-  <p></p>
-</div>
-
-<div id="Memberships" class="tabcontent">
-  <h3>Memberships</h3>
-  <p>Our Memberships are still in the works, you could buy it in discord</p> 
-   <button onclick="location.href = 'https://discord.gg/HNzG86D';" id="myButton" class="float-left submit-button" >Discord</button>
-
-    <p> if you want nonexploit group buy from here</p>
-     <button onclick="location.href = 'https://discord.gg/38qUy2F';" id="myButton" class="float-left submit-button" >Discord</button>
-  
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
     </div>
+  </div> 
+</div>
 
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>This group is about, selling account, and exploiting sort such. we also have some fun stuff, join our discord, we have a li</p>
-</div>
-    
-    
-<div id="Credits" class="tabcontent">
-  <h3>Dev</h3>
-  <p>Founder/Site Developer/Designer</p>
-    
-      <h3>Rod</h3>
-    <p>Founder of non exploit RBX Service</p>
-    
-      <h3>BungBob </h3>
-  <p>GFX Designer/Editor/Co Founder</p>
-    
-    <h3>SquidyBigShaq </h3>
-  <p>Discord Manager</p>
-    
-    <h3>Andrew </h3>
-  <p>Discord Manager</p>
-    
-    <h3>LukeDavis04</h3>
-  <p>Head Exploiter/Staff</p>
-    
-    <h3>DanDaManrekt</h3>
-  <p>Moderator</p>
- 
-</div>
-    
-    <div id="Downloads" class="tabcontent">
-  <h3>OP JailBreak Script</h3>
-  <button onclick="location.href = 'https://pastebin.com/raw/WNp01QUK';" id="myButton" class="float-left submit-button" >Click to see</button>
-</div>
-    
-    
-    
-    
-    
-    
-    
+<h3>Dropdown Menu inside a Navigation Bar</h3>
+<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
 
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-     
 </body>
-</html>             
+</html>
